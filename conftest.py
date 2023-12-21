@@ -20,7 +20,7 @@ def setup_browser(request):
     }
     options.capabilities.update(selenoid_capabilities)
     driver = webdriver.Remote(
-        command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub",
+        command_executor=f"http://94.131.96.125:8080/wd/hub",
         options=options
     )
 
